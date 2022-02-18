@@ -36,7 +36,7 @@
 })()
 
 async function ImportTable() {
-  return (await axios.get("../assets/tjma2001.txt")).data.trim().replace("\r", "").replace(/\x20+/g, " ").split("\n").map(x => {
+  return (await axios.get("https://wolf20482.github.io/eew-map-sample-with-travel-time-table-converter/assets/tjma2001.txt")).data.trim().replace("\r", "").replace(/\x20+/g, " ").split("\n").map(x => {
     const s = x.split(" ");
     return {
       p: parseFloat(s[1]),
