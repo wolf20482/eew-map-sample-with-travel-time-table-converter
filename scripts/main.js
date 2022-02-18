@@ -20,7 +20,7 @@
 
   L.circle([35.6896342, 139.6921007], value[1] * 1000, {
     color: "#ff0000",
-    weight: 6,
+    weight: 3,
     opacity: 1,
     fillColor: '#ff0000',
     fillOpacity: 0.2
