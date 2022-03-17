@@ -8,7 +8,7 @@
   L.tileLayer("https://cyberjapandata.gsi.go.jp/xyz/pale/{z}/{x}/{y}.png").addTo(map);
 
   const table = await ImportTable();
-  const value = GetValue(table, 60, 9);
+  const value = GetValue(table, 40, 3);
 
   L.circle([35.6896342, 139.6921007], value[0] * 1000, {
     color: "#0000ff",
